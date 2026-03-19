@@ -914,7 +914,7 @@ export default function Docs({ onClose }) {
             flexShrink: 0,
           }}
         >
-          v1.0
+          v0.2.0
         </span>
       </div>
 
