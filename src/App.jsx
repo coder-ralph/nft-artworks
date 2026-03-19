@@ -114,6 +114,21 @@ export default function App() {
           </button>
 
           <a
+            href="https://github.com/coder-ralph/nft-artworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'var(--text3)',
+              textDecoration: 'none',
+              transition: 'color 0.2s',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text2)')}
+            onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text3)')}
+          >
+            Source Code
+          </a>
+
+          <a
             href="https://docs.pinata.cloud"
             target="_blank"
             rel="noopener noreferrer"
