@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            ## NFT Artworks v0.2.0
+
+            Improved version of NFT Artworks — now powered by Pinata V3 and public IPFS as the source of truth.
+
+            ### Highlights
+            - IPFS upload via Pinata V3 (`/v3/files`)
+            - Metadata stored using `pinJSONToIPFS`
+            - Dynamic gallery fetched from Pinata (no localStorage dependency)
+            - ERC-721 compatible metadata with ETH pricing
+            - Improved UI and responsive layout
+            - Secure backend proxy (JWT never exposed)
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
