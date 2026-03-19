@@ -1,0 +1,42 @@
+{
+  "name": "nft-artworks",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "IPFS-powered NFT gallery with Pinata integration",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server.cjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .jsx,.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "form-data": "^4.0.0",
+    "formidable": "^3.5.1",
+    "framer-motion": "^11.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
