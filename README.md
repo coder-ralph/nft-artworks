@@ -6,6 +6,12 @@ A modern Web3 NFT gallery application. Upload NFT images to IPFS via Pinata, gen
 
 ---
 
+## Demo
+
+[![Watch Demo](public/preview.png)](public/project-demo.mp4)
+
+---
+
 ## 🚀 Features
 
 ### IPFS Upload via Pinata
